@@ -35,8 +35,17 @@
           io.unobserve(el);
         }
       });
-    }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+    }, { threshold: 0.08, rootMargin: '0px 0px -4% 0px' });
     reveals.forEach(el => io.observe(el));
+
+    setTimeout(() => {
+      reveals.forEach(el => {
+        const r = el.getBoundingClientRect();
+        if (r.top < window.innerHeight && r.bottom > 0) {
+          el.classList.add('is-visible');
+        }
+      });
+    }, 200);
   } else {
     reveals.forEach(el => el.classList.add('is-visible'));
   }
