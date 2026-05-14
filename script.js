@@ -39,13 +39,8 @@
     reveals.forEach(el => io.observe(el));
 
     setTimeout(() => {
-      reveals.forEach(el => {
-        const r = el.getBoundingClientRect();
-        if (r.top < window.innerHeight && r.bottom > 0) {
-          el.classList.add('is-visible');
-        }
-      });
-    }, 200);
+      reveals.forEach(el => el.classList.add('is-visible'));
+    }, 1500);
   } else {
     reveals.forEach(el => el.classList.add('is-visible'));
   }
