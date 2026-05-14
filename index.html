@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1f2a26">
+<meta name="description" content="Instituto Bárbara Helen. Medicina Capilar de Excelência em Vila Olímpia, São Paulo. Tricologia, transplante capilar, head spa e eyebrow center.">
+<title>Instituto Bárbara Helen · Medicina Capilar de Excelência</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/jpeg" href="assets/logo-bh.jpeg">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <a href="#topo" class="nav__brand" aria-label="Instituto Bárbara Helen">
+    <span class="nav__logo"><img src="assets/logo-bh.jpeg" alt="Instituto Bárbara Helen"></span>
+    <span class="nav__name">
+      <span class="nav__name-top">Instituto</span>
+      <span class="nav__name-bot">Bárbara Helen</span>
+    </span>
+  </a>
+  <nav class="nav__links" aria-label="Principal">
+    <a href="#instituto">Instituto</a>
+    <a href="#tratamentos">Tratamentos</a>
+    <a href="#resultados">Resultados</a>
+    <a href="#medica">A médica</a>
+    <a href="#visita">Visita</a>
+  </nav>
+  <a href="https://linktr.ee/institutobarbarahelen" target="_blank" rel="noopener" class="nav__cta">Agendar avaliação</a>
+  <button class="nav__menu" aria-label="Abrir menu" aria-expanded="false">
+    <span></span><span></span>
+  </button>
+</header>
+
+<main>
+
+<section id="topo" class="hero">
+  <div class="hero__veil"></div>
+  <div class="hero__inner">
+    <p class="hero__eyebrow"><span>Vila Olímpia</span><span class="dot"></span><span>São Paulo</span></p>
+    <figure class="hero__mark">
+      <img src="assets/logo-bh.jpeg" alt="Monograma Bárbara Helen">
+    </figure>
+    <h1 class="hero__title">Instituto Bárbara Helen</h1>
+    <p class="hero__tag">Medicina Capilar de Excelência</p>
+    <div class="hero__cta">
+      <a href="#tratamentos" class="btn btn--ghost">Conheça os tratamentos</a>
+      <a href="https://linktr.ee/institutobarbarahelen" target="_blank" rel="noopener" class="btn btn--copper">Agendar avaliação</a>
+    </div>
+  </div>
+  <div class="hero__scroll" aria-hidden="true">
+    <span class="hero__scroll-line"></span>
+    <span>continue</span>
+  </div>
+</section>
+
+<section id="manifesto" class="manifesto reveal">
+  <div class="manifesto__inner">
+    <p class="section__eyebrow">Manifesto</p>
+    <blockquote class="manifesto__quote">
+      <p class="manifesto__lead">Tempo é cabelo.</p>
+      <p>O corpo muda. O cabelo sente.</p>
+      <p>O maior erro é esperar para ver. O melhor momento para tratar é sempre o início; quanto mais a gente espera, mais difícil fica reverter.</p>
+      <p class="manifesto__final">Se você está notando queda, não normalize. Investigue.</p>
+    </blockquote>
+    <div class="manifesto__sign">
+      <span class="manifesto__sign-name">Dra. Bárbara Helen</span>
+      <span class="manifesto__sign-crm">CRM 160220 · SP</span>
+    </div>
+  </div>
+</section>
+
+<section id="instituto" class="instituto">
+  <div class="instituto__bg" aria-hidden="true"></div>
+  <div class="instituto__inner">
+    <div class="instituto__copy reveal">
+      <p class="section__eyebrow">O Instituto</p>
+      <h2 class="section__title">Um lugar criado para cuidar de você com precisão, acolhimento e excelência.</h2>
+      <p class="section__body">Aqui, cada detalhe importa. Em cada etapa da sua jornada capilar, desde a primeira consulta até o resultado clínico.</p>
+      <ul class="instituto__pillars">
+        <li><span>01</span><p>Diagnóstico antes de qualquer indicação.</p></li>
+        <li><span>02</span><p>Protocolos individualizados, baseados em evidência.</p></li>
+        <li><span>03</span><p>Acompanhamento clínico contínuo.</p></li>
+      </ul>
+    </div>
+    <div class="instituto__gallery">
+      <figure class="instituto__photo instituto__photo--tall reveal">
+        <img src="assets/local-recepcao.jpeg" alt="Recepção do Instituto Bárbara Helen">
+      </figure>
+      <figure class="instituto__photo reveal">
+        <img src="assets/local-tratamento.jpeg" alt="Sala de tratamento, parede de mármore">
+      </figure>
+      <figure class="instituto__photo reveal">
+        <img src="assets/local-atendimento.jpeg" alt="Detalhe do atendimento no Instituto">
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="tratamentos" class="tratamentos">
+  <header class="tratamentos__header reveal">
+    <p class="section__eyebrow">Tratamentos</p>
+    <h2 class="section__title">Cuidamos da causa, não só da aparência.</h2>
+    <p class="section__lead">Cada fio tem um motivo. Cada motivo tem um tratamento.</p>
+  </header>
+
+  <div class="tratamentos__list">
+
+    <article class="tratamento reveal">
+      <div class="tratamento__col tratamento__col--num">
+        <span class="tratamento__num">I</span>
+        <span class="tratamento__tag">Diagnóstico e protocolo</span>
+      </div>
+      <div class="tratamento__col tratamento__col--copy">
+        <h3>Tricologia</h3>
+        <p>Aqui, cada fio tem um motivo, e cada motivo tem um tratamento. Diagnóstico preciso, tecnologias avançadas e protocolos individualizados.</p>
+        <ul>
+          <li>Investigação clínica e laboratorial</li>
+          <li>Tratamentos de couro cabeludo</li>
+          <li>Protocolos de densificação</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="tratamento reveal">
+      <div class="tratamento__col tratamento__col--num">
+        <span class="tratamento__num">II</span>
+        <span class="tratamento__tag">Planejamento fio a fio</span>
+      </div>
+      <div class="tratamento__col tratamento__col--copy">
+        <h3>Transplante Capilar</h3>
+        <p>Indicação responsável, técnica refinada e resultados naturais. Planejamento que respeita anatomia, densidade, direção e o futuro do seu cabelo.</p>
+        <ul>
+          <li>Avaliação pré-cirúrgica detalhada</li>
+          <li>Desenho personalizado da linha frontal</li>
+          <li>Acompanhamento pós-operatório completo</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="tratamento reveal">
+      <div class="tratamento__col tratamento__col--num">
+        <span class="tratamento__num">III</span>
+        <span class="tratamento__tag">Saúde do couro cabeludo</span>
+      </div>
+      <div class="tratamento__col tratamento__col--copy">
+        <h3>Head Spa</h3>
+        <p>Um cuidado que vai muito além do relaxamento. Protocolos focados na saúde do couro cabeludo, equilíbrio e estímulo à vitalidade dos fios.</p>
+        <ul>
+          <li>Limpeza profunda e equilíbrio do escalpe</li>
+          <li>Massagem terapêutica e estímulo circulatório</li>
+          <li>Aplicação de ativos selecionados</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="tratamento reveal">
+      <div class="tratamento__col tratamento__col--num">
+        <span class="tratamento__num">IV</span>
+        <span class="tratamento__tag">Olhar em harmonia</span>
+      </div>
+      <div class="tratamento__col tratamento__col--copy">
+        <h3>Eyebrow Center</h3>
+        <p>Transplante, reconstrução e tratamentos especializados para devolver naturalidade, expressão e harmonia ao olhar.</p>
+        <ul>
+          <li>Mapeamento e desenho personalizado</li>
+          <li>Transplante de sobrancelhas fio a fio</li>
+          <li>Tratamentos de reconstrução capilar</li>
+        </ul>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<section id="resultados" class="resultados">
+  <header class="resultados__header reveal">
+    <p class="section__eyebrow">Antes & Depois</p>
+    <h2 class="section__title">Resultados acompanhados em consultório.</h2>
+    <p class="section__lead">Pacientes reais, registros do Instituto. Imagens autorizadas para divulgação.</p>
+  </header>
+
+  <div class="resultados__grid">
+    <figure class="resultado reveal">
+      <div class="resultado__frame">
+        <img src="assets/antes-depois-1.jpeg" alt="Antes e depois: recuperação da linha frontal">
+      </div>
+      <figcaption>
+        <span class="resultado__num">Caso 01</span>
+        <span class="resultado__title">Linha frontal</span>
+        <span class="resultado__sub">Transplante capilar, planejamento fio a fio</span>
+      </figcaption>
+    </figure>
+
+    <figure class="resultado reveal">
+      <div class="resultado__frame">
+        <img src="assets/antes-depois-2.jpeg" alt="Antes e depois: vértice e coroa">
+      </div>
+      <figcaption>
+        <span class="resultado__num">Caso 02</span>
+        <span class="resultado__title">Vértice</span>
+        <span class="resultado__sub">Tricologia e densificação clínica</span>
+      </figcaption>
+    </figure>
+
+    <figure class="resultado reveal">
+      <div class="resultado__frame">
+        <img src="assets/antes-depois-3.jpeg" alt="Antes e depois: cobertura total">
+      </div>
+      <figcaption>
+        <span class="resultado__num">Caso 03</span>
+        <span class="resultado__title">Cobertura completa</span>
+        <span class="resultado__sub">Acompanhamento longitudinal</span>
+      </figcaption>
+    </figure>
+  </div>
+
+  <p class="resultados__nota">Resultados variam conforme o caso clínico. Cada plano é individual.</p>
+</section>
+
+<section id="medica" class="medica">
+  <div class="medica__inner">
+    <figure class="medica__photo reveal">
+      <img src="assets/dra-barbara.jpeg" alt="Dra. Bárbara Helen">
+      <figcaption>Dra. Bárbara Helen</figcaption>
+    </figure>
+    <div class="medica__copy reveal">
+      <p class="section__eyebrow">A médica</p>
+      <h2 class="section__title">Dra. Bárbara Helen</h2>
+      <p class="medica__crm">CRM 160220 · SP</p>
+      <p class="section__body">À frente do Instituto, dedicada à medicina capilar de alta complexidade. Aqui, cada paciente é recebido com tempo, escuta e um plano feito sob medida.</p>
+      <p class="section__body">Diagnóstico antes de qualquer indicação. Honestidade antes de qualquer promessa.</p>
+      <a class="link" href="https://www.instagram.com/drabarbarahelen/" target="_blank" rel="noopener">@drabarbarahelen ↗</a>
+    </div>
+  </div>
+</section>
+
+<section id="visita" class="visita">
+  <div class="visita__bg" aria-hidden="true"></div>
+  <div class="visita__inner">
+    <p class="section__eyebrow">Venha nos visitar</p>
+    <h2 class="section__title">Rua Tenerife, 67.<br>Vila Olímpia, São Paulo.</h2>
+    <p class="section__lead">Atendimento somente com hora marcada.</p>
+
+    <div class="mapa reveal" aria-label="Mapa indicando a localização do Instituto Bárbara Helen">
+      <div id="mapa" class="mapa__canvas"></div>
+      <div class="mapa__legend">
+        <span class="mapa__legend-dot" aria-hidden="true"></span>
+        <span class="mapa__legend-text">
+          <span>Instituto Bárbara Helen</span>
+          <span>Rua Tenerife, 67 · Vila Olímpia</span>
+        </span>
+      </div>
+    </div>
+
+    <div class="visita__grid">
+      <a href="https://linktr.ee/institutobarbarahelen" target="_blank" rel="noopener" class="visita__card">
+        <span class="visita__label">Agendar avaliação</span>
+        <span class="visita__value">linktr.ee/institutobarbarahelen</span>
+        <span class="visita__arrow">↗</span>
+      </a>
+      <a href="https://www.instagram.com/institutobarbarahelen/" target="_blank" rel="noopener" class="visita__card">
+        <span class="visita__label">Instagram do Instituto</span>
+        <span class="visita__value">@institutobarbarahelen</span>
+        <span class="visita__arrow">↗</span>
+      </a>
+      <a href="https://www.google.com/maps/search/Rua+Tenerife,+67+Vila+Ol%C3%ADmpia+S%C3%A3o+Paulo" target="_blank" rel="noopener" class="visita__card">
+        <span class="visita__label">Como chegar</span>
+        <span class="visita__value">Rua Tenerife, 67 · Vila Olímpia</span>
+        <span class="visita__arrow">↗</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <figure class="footer__mark">
+      <img src="assets/logo-bh.jpeg" alt="Instituto Bárbara Helen">
+    </figure>
+    <p class="footer__name">Instituto Bárbara Helen</p>
+    <p class="footer__line">Medicina Capilar de Excelência</p>
+    <div class="footer__meta">
+      <p>Rua Tenerife, 67 · Vila Olímpia · São Paulo</p>
+      <p>CRM 1036601 · Responsável técnica Dra. Bárbara Helen CRM 160220 SP</p>
+    </div>
+    <p class="footer__copy">© <span id="year"></span> Instituto Bárbara Helen. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="script.js"></script>
+</body>
+</html>
